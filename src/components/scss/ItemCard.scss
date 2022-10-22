@@ -1,0 +1,115 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  .navbar {
+    background-color: wheat;
+    height: 15vh;
+
+  }
+  .itemCard-container {
+    width: 100vw;
+    height: 60vh;
+    position: inherit;
+    display: grid;
+    grid-template-columns: .3fr 1fr 1fr;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+
+    .item-carrousel-img {
+      padding-left: 2rem;
+      width: 12rem;
+      height: 100%;
+      overflow-y: scroll;
+
+      .itemCard-carrousel-img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .itemCard-img {
+      min-width: 500px;
+    }
+
+    .itemCard-overview {
+      width: 100%;
+      max-height: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      background: aliceblue;
+
+
+      .itemCard-overview-header {
+        text-align: left;
+        .itemCard-overview-title {
+          font-size: 65px;
+
+        }
+
+        .itemCard-overview-price {
+          font-weight: bold;
+          font-size: 50px;
+        }
+      }
+
+      .itemCard-overview-body {
+        width: 100%;
+        // background-color: rgba(128, 128, 128, 0.368);
+        display: grid;
+        justify-content: flex-start;
+        text-align: left;
+
+        .itemCard-overview-body-options {
+          padding-bottom: 2rem;
+        }
+
+        .option {
+          padding: 2rem 0;
+
+          .options-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .option-btn {
+              width: fit-content;
+              display: inline;
+              border: 1px solid black;
+              padding: 1rem 2rem;
+            }
+          }
+        }
+
+
+        .add-cart {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          background: bisque;
+
+          .add-cart-btn {
+            border: 1px solid white;
+            background-color: #039B7B;
+            width: 20rem;
+            height: 3rem;
+          }
+
+          .quantity-btn {
+            .quantity-num-btn {
+              padding: 0 2rem;
+            }
+            .qty-increase-btn {
+              width: 1rem;
+              height: 1rem;
+              border: 1px solid black;
+              border-radius: 50px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
