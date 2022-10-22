@@ -1,11 +1,12 @@
 import React, { useState} from 'react';
+import ficus from './assets/ficus.jpg';
 
 
 import './scss/Cart.scss';
 
 
 const Cart = () => {
-  const [cartOpen, setCartOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(true);
 
   const handleToggle = () => {
     setCartOpen(!cartOpen)
@@ -24,11 +25,24 @@ const Cart = () => {
       )}
     </button>
     <div className={`menuNav ${cartOpen ? " showMenu" : ''}`}>
-      <ul >
-        <span>Your Cart</span>
-        <button style={{border: '1px solid black'}} onClick={()=> setCartOpen(false)}>x</button>
-        <li className='navbar-items' >
-            Plant 1
+      <button style={{border: '1px solid black'}} onClick={()=> setCartOpen(false)}>x</button>
+      <span>Your Cart</span>
+      <ul className='items-cart'>
+        <li className='item-cart'>
+          <img className='item-cart-img' src={ficus} alt='ficus' />
+          <div className="item-cart-details">
+            <span className="item-cart-details-title">Plant 1</span>
+            <span className="item-cart-details-option">Small // Brick</span>
+            <span className="item-cart-details-price">$ 84</span>
+          </div>
+        </li>
+        <li className='item-cart'>
+          <img className='item-cart-img' src={ficus} alt='ficus' />
+          <div className="item-cart-details">
+            <span className="item-cart-details-title">Plant 2</span>
+            <span className="item-cart-details-option">Medium</span>
+            <span className="item-cart-details-price">$ 32</span>
+          </div>
         </li>
       </ul>
 
