@@ -1,0 +1,45 @@
+
+.navbar {
+  width: 100vw;
+  height: 15vh;
+  background-color: wheat;
+
+}
+
+.home-container {
+  width: 100vw;
+  .features-products {
+    margin: 2rem 0;
+
+    .feature-header {
+      font-size: 60px;
+      font-weight: bold;
+    }
+    .feature-carrousel {
+      height: 40rem;
+      margin-top: 1rem;
+      padding-left: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      gap:20px;
+      .item-carrousel-card {
+        // width: 10rem;
+        // height: 10rem;
+        text-align: left;
+        font-size: 25px;
+        cursor: pointer;
+
+        .home-carrousel-img {
+          height: 30rem;
+        }
+
+        :hover {
+          scale: 1.02
+        }
+      }
+    }
+  }
+}
