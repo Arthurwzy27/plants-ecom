@@ -22,6 +22,7 @@
       width: 12rem;
       height: 100%;
       overflow-y: scroll;
+      cursor: pointer;
 
       .itemCard-carrousel-img {
         width: 100%;
@@ -82,12 +83,10 @@
           }
         }
 
-
         .add-cart {
           display: flex;
           align-items: center;
           justify-content: space-around;
-          background: bisque;
 
           .add-cart-btn {
             border: 1px solid white;
@@ -106,6 +105,20 @@
               border: 1px solid black;
               border-radius: 50px;
             }
+          }
+        }
+
+        .item-description {
+          // margin-top: 1rem;
+          padding:1rem;
+          .description-header {
+            font-size: 30px;
+            font-weight: bold;
+            padding: 1rem 0;
+          }
+          .description-text {
+            padding-top:1rem;
+            text-align: justify;
           }
         }
       }
