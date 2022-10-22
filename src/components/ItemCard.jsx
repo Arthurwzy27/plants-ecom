@@ -21,11 +21,9 @@ const ItemCard = () => {
             <img className="itemCard-carrousel-img" src={ficus} alt='ficus' />
             <img className="itemCard-carrousel-img" src={ficus} alt='ficus' />
           </div>
-
           <div className="item-img">
             <img className="itemCard-img" src={ficus} alt='ficus' />
           </div>
-
           <div className="itemCard-overview">
             <div className="itemCard-overview-header">
               <div className="itemCard-overview-title">
@@ -126,7 +124,23 @@ const ItemCard = () => {
           </div>
         </div>
 
+        <div className="upsell-products">
+          <div className="upsell-products-header">
+            <span>You may also like ...</span>
+          </div>
+          <div className="upsell-products-carrousel">
+            {/* <div className="upsell-carrousel-img"> */}
+              <img className="upsell-carrousel-img" src={ficus} alt='ficus' />
+              <img className="upsell-carrousel-img" src={ficus} alt='ficus' />
+              <img className="upsell-carrousel-img" src={ficus} alt='ficus' />
+              <img className="upsell-carrousel-img" src={ficus} alt='ficus' />
+              <img className="upsell-carrousel-img" src={ficus} alt='ficus' />
+              <img className="upsell-carrousel-img" src={ficus} alt='ficus' />
+              <img className="upsell-carrousel-img" src={ficus} alt='ficus' />
+            {/* </div> */}
+          </div>
 
+        </div>
       </div>
 
     // </>
