@@ -2,8 +2,8 @@
   width: 35vw;
 
   .menu-button {
-    background-color: aqua;
   }
+  
   .cart-icon {
     width: 3rem;
   }
@@ -25,6 +25,41 @@
     background-color: white;
     border: 1px solid black;
     margin-top: 1rem;
+
+    .items-cart {
+      // background-color: yellow;
+      // display: grid;
+      // grid-template-columns: .5fr 1fr;
+
+      .item-cart {
+        margin: 1rem 0;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .item-cart-img {
+          width: 8rem;
+        }
+        .item-cart-details {
+          margin-left: 1rem;
+          display: grid;
+
+          .item-cart-details-title {
+            font-size: 20px;
+            font-weight: bold;
+
+          }
+          .item-cart-details-option {
+
+          }
+          .item-cart-details-price {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
 
   .navbar-items {
